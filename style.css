@@ -1,0 +1,122 @@
+body {
+
+    font-family: "oswaldregular", sans-serif;
+    background-image: url(pictures/backdrop.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.profilepic {
+
+    width: 500px;
+    height: auto;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+
+.main-grid{
+
+    display: flex;
+}
+
+.picture {
+
+    flex: 1;
+}
+
+.main-text {
+
+    flex: 2;
+}
+
+.skills {
+
+    position: relative;
+    top:auto;
+    bottom: -250px;
+    left: -400px;
+}
+
+.relative1 {
+ position: relative;
+ left: -330px;
+}
+
+.relative2 {
+ position: relative;
+ top: -25px;
+ left: -220px;
+ right: auto;
+ bottom: auto;
+}
+
+.relative3 {
+
+    position: relative;
+    left: -120px;
+}
+
+.socials {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#facebook {
+
+    order: 2;
+}
+
+#github {
+
+    order: 1;
+}
+
+#instagram {
+
+    order: 3;
+}
+
+#linkedin {
+
+    order: 4;
+}
+
+#skype {
+
+    order: 5;
+}
+
+.meter { 
+	height: 25px; 
+	position: relative;
+	background: rgb(179, 175, 175);
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(29, 175, 201);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
