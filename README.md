@@ -1,1 +1,1 @@
-[VCard] (https://mattnannetti.github.io/VCard/)
+[VCard](https://mattnannetti.github.io/VCard/)
