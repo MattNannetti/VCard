@@ -6,11 +6,14 @@ body {
 
     background-attachment: fixed;
     background-repeat: no-repeat; 
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .profilepic {
 
-    width: 500px;
+    width: 390px;
     height: auto;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
@@ -21,44 +24,54 @@ body {
 
 .main-grid{
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+    margin-top: 75px;
+    
 }
 
 .picture {
 
-    flex: 1;
+    grid-row: 1/3;
+    grid-column: 1;
 }
 
 .main-text {
 
-    flex: 2;
+    grid-row: 1;
+    grid-column: 2;
 }
 
 .skills {
 
     position: relative;
-    top:auto;
+   /* top:auto;
     bottom: -250px;
-    left: -400px;
+    left: -400px; */
+    grid-row: 2;
+    grid-column: 2;
+
+    width: 60%;
 }
 
 .relative1 {
  position: relative;
- left: -330px;
+ /* left: -330px; */
 }
 
 .relative2 {
  position: relative;
- top: -25px;
+ /*  top: -25px;
  left: -220px;
  right: auto;
- bottom: auto;
+ bottom: auto;  */
 }
 
 .relative3 {
 
-    position: relative;
-    left: -120px;
+  /*  position: relative;
+    left: -120px;   */
 }
 
 .socials {
@@ -69,38 +82,39 @@ body {
 }
 
 #facebook {
-
+    flex: auto;
     order: 2;
 }
 
 #github {
-
+    flex: auto;
     order: 1;
 }
 
 #instagram {
-
+    flex: auto;
     order: 3;
 }
 
 #linkedin {
-
+    flex: auto;
     order: 4;
 }
 
 #skype {
-
+    flex: auto;
     order: 5;
 }
 
 .meter { 
 	height: 25px; 
 	position: relative;
-	background: rgb(179, 175, 175);
+	background: rgb(201, 196, 196);
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	padding: 10px;
+    padding: 10px;
+    margin: 2px;
 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
 
@@ -123,3 +137,103 @@ body {
     position: relative;
     overflow: hidden;
   }
+
+
+ 
+  footer {
+      text-align: center;
+      background-color: black;
+      color: blanchedalmond;
+      height: 25 px;
+  }
+
+
+
+
+
+  /* MEDIA QUERIES */
+
+
+
+  /*medium sized screens */
+@media only screen and (min-width: 550px) and (max-width: 899px){
+
+.profilepic {
+
+    width: 280px;
+    height: auto;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    opacity: 50%;
+}
+
+}
+
+
+
+
+
+
+
+
+    /* small sized screens */
+  @media only screen and (max-width: 549px){
+
+
+
+        
+
+        .main-grid{
+
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 5;
+        }
+
+        .profilepic, .picture {
+
+            width: 180px;
+            height: auto;
+            margin: auto;
+            border-radius: 200px 200px 200px 200px;
+            -moz-border-radius: 200px 200px 200px 200px;
+            -webkit-border-radius: 200px 200px 200px 200px;
+            border: 0px solid #000000;
+            opacity: 50%;
+            grid-row: 3/4;
+            grid-column: 1 span;
+        }
+
+        .main-text {
+            grid-row: auto;
+            grid-column: 1;
+        }
+
+        .relative1 {
+        grid-row: 1/2;
+        grid-column: 2;
+        }
+
+        .relative2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        }
+
+        .relative3 {
+
+        grid-row: 4/5;
+        grid-column: 1/2;
+        }
+
+        .skills {
+
+            grid-row: 5/6;
+            grid-column: 1/2;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+
+}
